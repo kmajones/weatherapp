@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+ <meta charset="utf-8" />
+ 
+ <title>P5: Weather</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+
+</head>
+
+<body>
+  
+<!-- homepage -->
+<div data-role="page" id="home">
+	<div data-role="panel" id="mypanel" data-position="right">
+    
+
+	</div><!-- /panel -->
+
+<div data-role="header">
+  <h1>Weather</h1>
+  </div>
+  <div data-role="content" class="ui-content">
+     <a href="#spokane" 
+       data-role="button" 
+       data-theme="a"
+        data-transition="slide">Spokane</a>
+    
+    <a href="" data-role="button" data-theme="a">Cheney</a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda alias inventore debitis quia iste totam cum ipsam iusto. Ex, sequi nostrum. Ex unde nesciunt eligendi vel totam nostrum et animi.</p>
+  </div>
+  
+  <div data-role="footer">
+  <h6>2015</h6>
+  </div>
+    
+</div>
+
+<!-- Spokane -->
+<div data-role="page" id="spokane">
+  <div data-role="header">
+    <a href="#home"
+       data-transition="flip">Home</a>
+  </div>
+  
+  <div data-role="content">
+    <h1>Spokane Weather</h1>
+    <p>60 deg and sunny</p>
+  </div>
+
+</div>
+
+
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/simpleWeather.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
