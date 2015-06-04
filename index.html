@@ -12,49 +12,72 @@
 
 </head>
 
-<body>
-  
-<!-- homepage -->
-<div data-role="page" id="home">
-	<div data-role="panel" id="mypanel" data-position="right">
-    
+<!--Panel Page 1-->
+<div data-role="page" id="pageone">
 
-	</div><!-- /panel -->
+<!--Page 1 Nav-->  
+  <div data-role="panel" id="myPanel" data-display="overlay"> 
+     <a href="" data-rel="close" class="ui-btn ui-btn-right ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
+    <h2>Panel Header</h2>
+<ul>
+  <li><a href="#pageone">Page one</a></li>
+  <li><a href="#pagetwo">Page two</a></li>
+  <li><a href="#pagethree">Page three</a></li>
+</ul>  
+</div> 
 
-<div data-role="header">
-  <h1>Weather</h1>
-  </div>
-  <div data-role="content" class="ui-content">
-     <a href="#spokane" 
-       data-role="button" 
-       data-theme="a"
-        data-transition="slide">Spokane</a>
-    
-    <a href="" data-role="button" data-theme="a">Cheney</a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda alias inventore debitis quia iste totam cum ipsam iusto. Ex, sequi nostrum. Ex unde nesciunt eligendi vel totam nostrum et animi.</p>
-  </div>
-  
-  <div data-role="footer">
-  <h6>2015</h6>
-  </div>
-    
-</div>
-
-<!-- Spokane -->
-<div data-role="page" id="spokane">
+<!--Page 1 Content-->  
   <div data-role="header">
-    <a href="#home"
-       data-transition="flip">Home</a>
+    <h1>Page Header</h1>
+       <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
   </div>
+
+  <div data-role="main" class="ui-content">
+  <div class="weather-icon"></div>
+   <h3 class="weather-temp">45DEG</h3>
+    <p class="description">It is currently Blah Blah outside</p>
+     
+  </div>
+  <div data-role="footer">
+    <h1>Page Footer</h1>
+  </div> 
+</div> 
   
-  <div data-role="content">
-    <h1>Spokane Weather</h1>
-    <p>60 deg and sunny</p>
+  <!--Panel Page 2-->
+<div data-role="page" id="pagetwo">
+  <!--Page 2 Nav-->  
+  <div data-role="panel" id="myPanel" data-display="overlay"> 
+     <a href="#pageone" data-rel="close" class="ui-btn ui-btn-right ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
+    <h2>Navigation</h2>
+<ul>
+  <li><a href="">link link</a></li>
+  <li><a href="">link link</a></li>
+  <li><a href="">link link</a></li>
+</ul>  
+</div> 
+  <div data-role="header">
+    <h1>Spokane, Wa</h1>
+       <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
   </div>
 
-</div>
+<!--Page 2 Content-->  
+  <div data-role="main" class="ui-content">
+  <div class="weather-icon"></div>
+   
+    <h3 class="weather-temp">45DEG</h3>
+    <p class="description">It is currently Blah Blah outside</p>
+    
+  
+  </div>
+  <div data-role="footer">
+    <h1>Page Footer</h1>
+  </div> 
+</div> 
+
+</body>
 
 
+<!--Scripts-->  
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/simpleWeather.min.js"></script>

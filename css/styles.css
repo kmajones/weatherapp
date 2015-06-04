@@ -1,0 +1,35 @@
+ul li{
+  list-style:none;
+}
+
+.ui-content{
+  width:90%;
+  /*May want to change this back to 100*/
+  background: yellow;
+  margin:0 auto;
+}
+.weather-temp, .description{
+  margin:0;
+  background: #000;
+  text-align:center;
+  
+}
+
+div img{
+  width:100%;
+  max-width:288px;
+  height:100%;
+  display:inline-block;
+  margin:;
+}
+
+.weather-icon{
+  margin:0 auto;
+  width:100%;
+  max-width:300px;
+  height:300px;
+/*Hook this*/  
+  background: url("http://codepen.io/kmajones/pen/pJeEjp.svg") no-repeat center;
+  background-size:200px;
+  
+}
