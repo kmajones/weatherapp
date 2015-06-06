@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-
- <meta name="viewport" content="width=device-width, initial-scale=1"> 
- 
- <title>P5: Weather</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css"> 
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 </head>
-
+<body>
+  
 <!--Panel Page 1-->
 <div data-role="page" id="pageone">
-
-<!--Page 1 Nav-->  
   <div data-role="panel" id="myPanel" data-display="overlay"> 
      <a href="" data-rel="close" class="ui-btn ui-btn-right ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
     <h2>Panel Header</h2>
@@ -25,17 +19,17 @@
   <li><a href="#pagethree">Page three</a></li>
 </ul>  
 </div> 
-
-<!--Page 1 Content-->  
   <div data-role="header">
     <h1>Page Header</h1>
        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
   </div>
 
   <div data-role="main" class="ui-content">
-  <div class="weather-icon"></div>
-   <h3 class="weather-temp">45DEG</h3>
+  <h4 class="city">city</h3>
+    <div class="weather-icon"></div>
+    <h3 class="weather-temp">45DEG</h3>
     <p class="description">It is currently Blah Blah outside</p>
+     <p><span class="high"></span><span class="low"></span></p>
      
   </div>
   <div data-role="footer">
@@ -43,9 +37,8 @@
   </div> 
 </div> 
   
-  <!--Panel Page 2-->
+  <!--Panel Page 2 - Add more pages last -->
 <div data-role="page" id="pagetwo">
-  <!--Page 2 Nav-->  
   <div data-role="panel" id="myPanel" data-display="overlay"> 
      <a href="#pageone" data-rel="close" class="ui-btn ui-btn-right ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
     <h2>Navigation</h2>
@@ -60,7 +53,6 @@
        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
   </div>
 
-<!--Page 2 Content-->  
   <div data-role="main" class="ui-content">
   <div class="weather-icon"></div>
    
@@ -74,13 +66,10 @@
   </div> 
 </div> 
 
-</body>
-
-
 <!--Scripts-->  
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script src="js/simpleWeather.min.js"></script>
+  <script src="js/simpleWeather.min.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>
