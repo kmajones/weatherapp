@@ -36,9 +36,10 @@ div img{
 
 /* Form stying */
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a{
-  width:25%;
-  margin:0 auto;
+width:25%;
+margin:0 auto;
 }
+
 .ui-mobile label, .ui-controlgroup-label{
   margin:0 auto;
   display:block;
