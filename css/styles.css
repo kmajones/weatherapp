@@ -1,3 +1,9 @@
+/*Page header*/
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit{
+  height:100px;
+  background-color:#333;
+}
+
 ul li{
   list-style:none;
 }
