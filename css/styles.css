@@ -1,3 +1,6 @@
+html{
+  display:none;
+}
 /*Page header*/
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit{
   height:100px;
@@ -44,6 +47,11 @@ div img{
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a{
 width:25%;
 margin:0 auto;
+}
+
+form{
+  width:20%;
+  margin:0 auto; 
 }
 
 .ui-mobile label, .ui-controlgroup-label{
