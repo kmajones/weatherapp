@@ -57,6 +57,56 @@ var loadWeather = function(location) {
     
 }; // end of _loadWeather()_ function
   
+  //Enter Zip
+
+// REF: http://foundation.zurb.com/docs/
+// REF: http://simpleweatherjs.com/
+
+// On click button, get zip, then run Simple Weather
+$('button').on('click', function() {
   
+  // 1. Get & store entered zipcode
+  var zipcode = $('#getWeather').val();
+  
+  // 2. Pass weather into _simpleWeather()_ object
+  $.simpleWeather({
+    
+    location: zipcode,
+  
+    success: function(weather) {
+      
+      
+      // Output to hooks in HTML
+      $(' .weather-temp').text(weather.temp+weather.units.temp);
+      $(' .city').text(weather.city+', '+weather.region);
+      $(' .description').text(weather.currently);  
+       $('.weather-icon').html('<img src="img/'+weather.code+'.svg">');
+      
+      $(' .high').text(weather.high+weather.units.temp+' ');
+      $(' .low').text(weather.low+weather.units.temp);
+
+      $(' .tomtemp').text(weather.forecast[1].high+weather.units.temp);
+      $('.tomcurrent').text(weather.forecast[1].text);  
+      $('.tomimage').html('<img src="img/'+weather.forecast[1].code+'.svg">');
+      $(' .tomhigh').text(weather.forecast[1].high+weather.units.temp+' ');
+      $(' .tomlow').text(weather.forecast[1].high+weather.units.temp);
+      
+      
+      // See console for all properties of object
+      console.log(weather);
+      
+    },
+  
+    error: function(error) {
+      $('body').html('<p>' + error + '</p>');
+    }
+  
+  });
+  
+  // 3. Reset input value
+  $('#getWeather').val('');
+  
+});
+
 //Ends doc load- DO NOT DELETE THIS ON ACCIDENT, you goof   
  }); 

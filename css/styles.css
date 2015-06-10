@@ -33,3 +33,24 @@ div img{
   background-size:200px;
   
 }
+
+/* Form stying */
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a{
+  width:25%;
+  margin:0 auto;
+}
+.ui-mobile label, .ui-controlgroup-label{
+  margin:0 auto;
+  display:block;
+  background: green;
+  width:20%;
+
+}
+form h4{
+  margin:.2% 0; 
+  text-align: center;}
+
+
+.ui-btn{
+  margin:1% 47%;
+}
