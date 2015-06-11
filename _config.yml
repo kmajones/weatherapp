@@ -1,5 +1,5 @@
----
----
+# Variables & Global
+name: weather app 
 
 # Server Configs
-baseurl: /jekyll-theme
+baseurl: /weatherapp
